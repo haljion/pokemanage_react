@@ -1,7 +1,6 @@
 FROM node:14.16
 # lts
-RUN mkdir /src
-WORKDIR /src/pokemanage_front
+WORKDIR /var/www/src
 RUN apt-get -y update \
     && apt-get install -y \
     git
