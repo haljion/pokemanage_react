@@ -38,7 +38,7 @@ export const appConsts = {
     },
     color: { default: 0, strange: 1 },
   },
-  dropdown: { wazaNon: 645, itemNon: 164, ballMonster: 19 },
+  dropdown: { wazaNon: 644, itemNon: 163, ballMonster: 19 },
   // ページネーション: 各ページ表示数
   displayNum: 6,
   errorMessage: {

@@ -46,3 +46,7 @@ yarn install
 cd pokemanage_front
 yarn start
 ```
+
+appConsts.dropdown.itemNon
+appConsts.dropdown.wazaNon
+の値が適切か確認する
