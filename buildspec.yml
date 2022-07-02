@@ -6,6 +6,7 @@ phases:
       nodejs: 16
   pre_build:
     commands:
+      - n 14.16
       - if [ -e /tmp/node_modules.tar ]; then tar xf /tmp/node_modules.tar; fi
       - pwd
       - cd pokemanage_front
