@@ -1,0 +1,8 @@
+FROM node:14.16
+# lts
+WORKDIR /var/www/src
+RUN apt-get -y update \
+    && apt-get install -y \
+    git
+
+RUN yarn install
