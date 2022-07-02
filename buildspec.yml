@@ -11,10 +11,10 @@ phases:
       - pwd
       - cd pokemanage_front
       - pwd
-      - npm install
+      - yarn install
   build:
     commands:
-      - npm run build
+      - yarn build
   post_build:
     commands:
       - tar cf /tmp/node_modules.tar node_modules
