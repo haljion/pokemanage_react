@@ -7,7 +7,7 @@ export const appConsts = {
   },
   page: {
     top: 'PokeManage TOP',
-    topHeader: 'PokeManage とは',
+    topHeader: 'PokeManage',
     list: '育成ポケモン一覧',
     new: '育成ポケモン登録',
     edit: '育成ポケモン編集',
