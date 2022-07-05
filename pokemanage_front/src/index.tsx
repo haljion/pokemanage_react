@@ -26,9 +26,9 @@ ReactDOM.render(
   <BrowserRouter>
     <QueryClientProvider client={queryClient}>
       <Auth0Provider
-        domain="pokemanage-auth.jp.auth0.com"
-        clientId="g7ByPHzDlNaG731xAs5miuAz5H0aDbnE"
-        redirectUri={window.location.origin} // 今回はhttp://localhost:3000に帰ってくるように設定
+        domain="pokemanage.us.auth0.com"
+        clientId="r21n9i3oY7FYNjUSVvWMuhsZUaNOcTxA"
+        redirectUri={window.location.origin}
       >
         <App />
       </Auth0Provider>
