@@ -1,9 +1,10 @@
 /* eslint-disable import/prefer-default-export */
 import { Options, NormalizedOptions } from 'ky';
 import camelcaseKeys from 'camelcase-keys';
+import { appConsts } from './consts';
 
 export const DEFAULT_API_OPTIONS: Options = {
-  prefixUrl: 'http://localhost:8888/api',
+  prefixUrl: appConsts.url.apiPrefix,
   timeout: 7000,
   retry: 0,
   hooks: {
@@ -33,7 +34,7 @@ export const DEFAULT_API_OPTIONS: Options = {
 };
 
 export const NO_RESPONSE_API_OPTIONS: Options = {
-  prefixUrl: 'http://localhost:8888/api',
+  prefixUrl: appConsts.url.apiPrefix,
   timeout: 7000,
   retry: 0,
 };
