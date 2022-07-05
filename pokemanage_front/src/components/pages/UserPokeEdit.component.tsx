@@ -172,7 +172,7 @@ const UserPokeEdit: VFC<{
                 columnSpacing={3}
                 alignItems="flex-end"
               >
-                <Grid item xs={9}>
+                <Grid item xs={12} lg={9}>
                   <Controller
                     name="pokemon"
                     control={control}
@@ -194,7 +194,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs={12} lg={3}>
                   <Controller
                     name="nickname"
                     control={control}
@@ -204,12 +204,14 @@ const UserPokeEdit: VFC<{
                         id="nickname"
                         label="ニックネーム"
                         variant="outlined"
+                        size="small"
+                        fullWidth
                       />
                     )}
                   />
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Controller
                     name="gender"
                     control={control}
@@ -248,7 +250,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Controller
                     name="color"
                     control={control}
@@ -267,7 +269,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                   <Controller
                     name="ball"
                     control={control}
@@ -289,7 +291,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                   <Controller
                     name="personality"
                     control={control}
@@ -313,7 +315,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                   <Controller
                     name="ability"
                     control={control}
@@ -333,7 +335,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={4}>
+                <Grid item xs={12} md={6} lg={4}>
                   <Controller
                     name="item"
                     control={control}
@@ -356,7 +358,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Controller
                     name="waza1"
                     control={control}
@@ -393,7 +395,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Controller
                     name="waza2"
                     control={control}
@@ -416,7 +418,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Controller
                     name="waza3"
                     control={control}
@@ -439,7 +441,7 @@ const UserPokeEdit: VFC<{
                   />
                 </Grid>
 
-                <Grid item xs={3}>
+                <Grid item xs={12} md={6} lg={3}>
                   <Controller
                     name="waza4"
                     control={control}
@@ -494,7 +496,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={6}>
+                              <Grid item xs={12} lg={6}>
                                 <Controller
                                   name="individualValueH"
                                   control={control}
@@ -526,7 +528,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <Controller
                                   name="effortValueH"
                                   control={control}
@@ -565,7 +567,7 @@ const UserPokeEdit: VFC<{
                                 />
                               </Grid>
 
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <ButtonGroup
                                   fullWidth
                                   size="large"
@@ -606,7 +608,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={6}>
+                              <Grid item xs={12} lg={6}>
                                 <Controller
                                   name="individualValueA"
                                   control={control}
@@ -638,7 +640,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <Controller
                                   name="effortValueA"
                                   control={control}
@@ -666,7 +668,7 @@ const UserPokeEdit: VFC<{
                                 />
                               </Grid>
 
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <ButtonGroup
                                   fullWidth
                                   size="large"
@@ -711,7 +713,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={6}>
+                              <Grid item xs={12} lg={6}>
                                 <Controller
                                   name="individualValueB"
                                   control={control}
@@ -743,7 +745,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <Controller
                                   name="effortValueB"
                                   control={control}
@@ -771,7 +773,7 @@ const UserPokeEdit: VFC<{
                                 />
                               </Grid>
 
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <ButtonGroup
                                   fullWidth
                                   size="large"
@@ -816,7 +818,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={6}>
+                              <Grid item xs={12} lg={6}>
                                 <Controller
                                   name="individualValueC"
                                   control={control}
@@ -848,7 +850,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <Controller
                                   name="effortValueC"
                                   control={control}
@@ -876,7 +878,7 @@ const UserPokeEdit: VFC<{
                                 />
                               </Grid>
 
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <ButtonGroup
                                   fullWidth
                                   size="large"
@@ -921,7 +923,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={6}>
+                              <Grid item xs={12} lg={6}>
                                 <Controller
                                   name="individualValueD"
                                   control={control}
@@ -953,7 +955,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <Controller
                                   name="effortValueD"
                                   control={control}
@@ -981,7 +983,7 @@ const UserPokeEdit: VFC<{
                                 />
                               </Grid>
 
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <ButtonGroup
                                   fullWidth
                                   size="large"
@@ -1026,7 +1028,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={6}>
+                              <Grid item xs={12} lg={6}>
                                 <Controller
                                   name="individualValueS"
                                   control={control}
@@ -1058,7 +1060,7 @@ const UserPokeEdit: VFC<{
                               justifyContent="center"
                               alignItems="center"
                             >
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <Controller
                                   name="effortValueS"
                                   control={control}
@@ -1086,7 +1088,7 @@ const UserPokeEdit: VFC<{
                                 />
                               </Grid>
 
-                              <Grid item xs={2}>
+                              <Grid item xs={12} lg={2}>
                                 <ButtonGroup
                                   fullWidth
                                   size="large"
@@ -1125,7 +1127,7 @@ const UserPokeEdit: VFC<{
                   </TableContainer>
                 </Grid>
 
-                <Grid item xs={10}>
+                <Grid item xs={12}>
                   <Controller
                     name="remarks"
                     control={control}
@@ -1151,7 +1153,7 @@ const UserPokeEdit: VFC<{
                 justifyContent="flex-end"
                 alignItems="flex-end"
               >
-                <Grid item xs={1}>
+                <Grid item xs={5} md={3} lg={2}>
                   <Button
                     variant="contained"
                     color="primary"
@@ -1163,7 +1165,7 @@ const UserPokeEdit: VFC<{
                   </Button>
                 </Grid>
 
-                <Grid item xs={1}>
+                <Grid item xs={5} md={3} lg={2}>
                   <Button
                     variant="contained"
                     color="primary"

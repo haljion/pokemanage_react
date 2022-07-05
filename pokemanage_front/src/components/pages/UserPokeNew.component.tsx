@@ -151,7 +151,7 @@ const UserPokeNew: VFC<{
               columnSpacing={3}
               alignItems="flex-end"
             >
-              <Grid item xs={9}>
+              <Grid item xs={12} lg={9}>
                 <Controller
                   name="pokemon"
                   control={control}
@@ -173,7 +173,7 @@ const UserPokeNew: VFC<{
                 />
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid item xs={12} lg={3}>
                 <Controller
                   name="nickname"
                   control={control}
@@ -190,7 +190,7 @@ const UserPokeNew: VFC<{
                 />
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid item xs={12} md={6} lg={3}>
                 <Controller
                   name="gender"
                   control={control}
@@ -231,7 +231,7 @@ const UserPokeNew: VFC<{
                 />
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid item xs={12} md={6} lg={3}>
                 <Controller
                   name="color"
                   control={control}
@@ -248,7 +248,7 @@ const UserPokeNew: VFC<{
                 />
               </Grid>
 
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <Controller
                   name="ball"
                   control={control}
@@ -270,7 +270,7 @@ const UserPokeNew: VFC<{
                 />
               </Grid>
 
-              <Grid item xs={4}>
+              <Grid item xs={12} md={6} lg={4}>
                 <Controller
                   name="personality"
                   control={control}
@@ -290,7 +290,7 @@ const UserPokeNew: VFC<{
                 />
               </Grid>
 
-              <Grid item xs={4}>
+              <Grid item xs={12} md={6} lg={4}>
                 <Controller
                   name="ability"
                   control={control}
@@ -304,14 +304,14 @@ const UserPokeNew: VFC<{
                         isClearable
                         isSearchable={false}
                         options={getAbilitys(watch('pokemon').id)}
-                        placeholder="特性を選択してください ※必須"
+                        placeholder="Select ※必須"
                       />
                     </Suspense>
                   )}
                 />
               </Grid>
 
-              <Grid item xs={4}>
+              <Grid item xs={12} md={6} lg={4}>
                 <Controller
                   name="item"
                   control={control}
@@ -327,14 +327,14 @@ const UserPokeNew: VFC<{
                         getOptionLabel={(item) =>
                           `${item.name} / ${kataToHira(item.name)}`
                         }
-                        placeholder="もちものを選択してください"
+                        placeholder="Select"
                       />
                     </>
                   )}
                 />
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid item xs={12} md={6} lg={3}>
                 <Controller
                   name="waza1"
                   control={control}
@@ -367,7 +367,7 @@ const UserPokeNew: VFC<{
                 />
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid item xs={12} md={6} lg={3}>
                 <Controller
                   name="waza2"
                   control={control}
@@ -383,14 +383,14 @@ const UserPokeNew: VFC<{
                         getOptionLabel={(waza) =>
                           `${waza.name} / ${kataToHira(waza.name)}`
                         }
-                        placeholder="わざを選択してください"
+                        placeholder="Select"
                       />
                     </>
                   )}
                 />
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid item xs={12} md={6} lg={3}>
                 <Controller
                   name="waza3"
                   control={control}
@@ -406,14 +406,14 @@ const UserPokeNew: VFC<{
                         getOptionLabel={(waza) =>
                           `${waza.name} / ${kataToHira(waza.name)}`
                         }
-                        placeholder="わざを選択してください"
+                        placeholder="Select"
                       />
                     </>
                   )}
                 />
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid item xs={12} md={6} lg={3}>
                 <Controller
                   name="waza4"
                   control={control}
@@ -429,7 +429,7 @@ const UserPokeNew: VFC<{
                         getOptionLabel={(waza) =>
                           `${waza.name} / ${kataToHira(waza.name)}`
                         }
-                        placeholder="わざを選択してください"
+                        placeholder="Select"
                       />
                     </>
                   )}
@@ -468,7 +468,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={6}>
+                            <Grid item xs={12} lg={6}>
                               <Controller
                                 name="individualValueH"
                                 control={control}
@@ -500,7 +500,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <Controller
                                 name="effortValueH"
                                 control={control}
@@ -539,7 +539,7 @@ const UserPokeNew: VFC<{
                               />
                             </Grid>
 
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <ButtonGroup
                                 fullWidth
                                 size="large"
@@ -580,7 +580,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={6}>
+                            <Grid item xs={12} lg={6}>
                               <Controller
                                 name="individualValueA"
                                 control={control}
@@ -612,7 +612,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <Controller
                                 name="effortValueA"
                                 control={control}
@@ -640,7 +640,7 @@ const UserPokeNew: VFC<{
                               />
                             </Grid>
 
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <ButtonGroup
                                 fullWidth
                                 size="large"
@@ -685,7 +685,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={6}>
+                            <Grid item xs={12} lg={6}>
                               <Controller
                                 name="individualValueB"
                                 control={control}
@@ -717,7 +717,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <Controller
                                 name="effortValueB"
                                 control={control}
@@ -745,7 +745,7 @@ const UserPokeNew: VFC<{
                               />
                             </Grid>
 
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <ButtonGroup
                                 fullWidth
                                 size="large"
@@ -790,7 +790,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={6}>
+                            <Grid item xs={12} lg={6}>
                               <Controller
                                 name="individualValueC"
                                 control={control}
@@ -822,7 +822,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <Controller
                                 name="effortValueC"
                                 control={control}
@@ -850,7 +850,7 @@ const UserPokeNew: VFC<{
                               />
                             </Grid>
 
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <ButtonGroup
                                 fullWidth
                                 size="large"
@@ -895,7 +895,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={6}>
+                            <Grid item xs={12} lg={6}>
                               <Controller
                                 name="individualValueD"
                                 control={control}
@@ -927,7 +927,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <Controller
                                 name="effortValueD"
                                 control={control}
@@ -955,7 +955,7 @@ const UserPokeNew: VFC<{
                               />
                             </Grid>
 
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <ButtonGroup
                                 fullWidth
                                 size="large"
@@ -1000,7 +1000,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={6}>
+                            <Grid item xs={12} lg={6}>
                               <Controller
                                 name="individualValueS"
                                 control={control}
@@ -1032,7 +1032,7 @@ const UserPokeNew: VFC<{
                             justifyContent="center"
                             alignItems="center"
                           >
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <Controller
                                 name="effortValueS"
                                 control={control}
@@ -1060,7 +1060,7 @@ const UserPokeNew: VFC<{
                               />
                             </Grid>
 
-                            <Grid item xs={2}>
+                            <Grid item xs={12} lg={2}>
                               <ButtonGroup
                                 fullWidth
                                 size="large"
@@ -1099,7 +1099,7 @@ const UserPokeNew: VFC<{
                 </TableContainer>
               </Grid>
 
-              <Grid item xs={10}>
+              <Grid item xs={12}>
                 <Controller
                   name="remarks"
                   control={control}
@@ -1125,7 +1125,7 @@ const UserPokeNew: VFC<{
               justifyContent="flex-end"
               alignItems="flex-end"
             >
-              <Grid item xs={1}>
+              <Grid item xs={5} md={3} lg={2}>
                 <Button
                   variant="contained"
                   color="primary"
@@ -1136,7 +1136,7 @@ const UserPokeNew: VFC<{
                   登録
                 </Button>
               </Grid>
-              <Grid item xs={1}>
+              <Grid item xs={5} md={3} lg={2}>
                 <Button
                   variant="contained"
                   color="primary"

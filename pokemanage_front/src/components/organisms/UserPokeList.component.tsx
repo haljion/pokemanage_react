@@ -1,4 +1,4 @@
-import { Card, CardContent, Grid, Box } from '@mui/material';
+import { Card, CardContent, Grid, Box, Alert } from '@mui/material';
 
 import { VFC } from 'react';
 import { UserPoke } from '../../utils/types';
@@ -26,13 +26,13 @@ const UserPokeList: VFC<{
         <Pagination count={pageCount} page={page} onChangeFunc={handleChange} />
       </Grid>
     ) : (
-      <div>
+      <Alert severity="info">
         まだポケモンが登録されていません。「ポケモン登録」ボタンからあなたのポケモンを登録しましょう！
-      </div>
+      </Alert>
     )}
 
     {displayedUserPokes.map((userPoke) => (
-      <Grid item xs={4}>
+      <Grid item xs={12} md={6} lg={4}>
         <Card
           sx={{
             bgcolor: 'grey.50',

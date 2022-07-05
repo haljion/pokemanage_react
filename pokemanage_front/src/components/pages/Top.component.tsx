@@ -18,10 +18,6 @@ const Top: VFC = () => (
         <Typography>
           ゲーム「ポケットモンスター」シリーズの対戦における育成個体管理ツールです。
         </Typography>
-        <Typography>
-          ボックスに「どういう意図の調整か忘れた...」「同じポケモンを複数育てたけど、どれがどれだったか...」といった個体はいませんか？
-        </Typography>
-        <Typography>PokeManage はそのような悩みを解決します。</Typography>
 
         <Typography>育成個体は以下のようなリストで表示されます。</Typography>
         <img
@@ -31,13 +27,9 @@ const Top: VFC = () => (
           width="100%"
         />
 
-        <Typography>以下のようなフォームから各データを入力します。</Typography>
-        <img
-          src={`${process.env.PUBLIC_URL}/img/top/UserPokeNew.PNG`}
-          alt="UserPokeNew.png"
-          height="auto"
-          width="100%"
-        />
+        <Typography>
+          右上の「ログイン」ボタンからアカウントを登録して早速始めましょう！
+        </Typography>
       </Grid>
     </Grid>
   </>
