@@ -4,7 +4,7 @@ export const appConsts = {
     root: '/',
     new: '/userpoke/new',
     edit: '/userpoke/edit',
-    apiPrefix: 'http://35.79.89.205/api/',
+    apiPrefix: 'https://apiserver.pokemanage.com/api/',
   },
   page: {
     top: 'PokeManage TOP',
