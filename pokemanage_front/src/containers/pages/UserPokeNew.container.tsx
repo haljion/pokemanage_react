@@ -73,7 +73,7 @@ const EnhancedUserPokeNew: VFC = () => {
       effortValueC: 0,
       effortValueD: 0,
       effortValueS: 0,
-      waza1: wazas[0],
+      waza1: wazas[1],
       remarks: '',
     },
   });
